@@ -1,0 +1,202 @@
+@import url(https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_container {
+    box-shadow: 0 1px 3px rgba(0,0,0,.1),0 2px 2px rgba(0,0,0,.06),0 0 2px rgba(0,0,0,.07);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar-left a,
+.navbar-right a, button,
+.find-a-store {
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(23, 23, 23);
+    font-family: "SoDo Sans SemiBold";
+    font-size: 14px;
+}
+
+.navbar-left a:hover,
+.find-a-store:hover {
+    color: #00754a;
+}
+
+.navbar-right {
+   display: flex;
+}
+
+.navbar-right button {
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 8px 20px 5px 20px;
+    cursor: pointer;
+}
+
+.join_now {
+    background-color: black;
+    color: white;
+    margin-left: 0;
+}
+
+.join_now:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.sign_in {
+    background-color: white;
+    margin-right: 10px;
+}
+
+.sign_in:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.logo_starbucks {
+    width: 50px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.find-a-store {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    margin-top: 30px;
+}
+
+.product_left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.product_left img {
+    width: 100%; 
+}
+
+.product_right {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: "SoDo Sans SemiBold";
+}
+
+.product_right h1 {
+    color: #1E3932;
+    font-size: 50px;
+    letter-spacing: 2px;
+    line-height: 4rem;
+}
+
+.texto_product_right {
+    width: 400px;
+    font-family: "Arial";
+    font-size: 24px;
+    color: #1e3932;
+    line-height: 2.2rem;
+}
+
+.product_right h1, button, p {
+    margin: 27px;
+}
+
+.product_right button {
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 14px 21px;
+    font-weight: 600;
+    line-height: 1.2;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.product_right button:hover {
+    background-color: rgba(132, 132, 132, 0.209);
+}
+
+.footer_div {
+    display: flex;
+    justify-content: center;
+    font-family: "SoDo Sans SemiBold";
+    padding: 15px;
+    margin-top: 30px;
+    background-color: rgba(142, 142, 142, 0.727);
+    color:#1E3932;
+    font-size: 12px;
+}
+
+.hamburguer_icon {
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    .hamburguer_icon {
+        display: flex;
+        width: 23px;
+        margin-right: 28px;
+        cursor: pointer;
+        opacity: 70%;
+    }
+
+    .navbar-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .product_left {
+        width: 100%;
+    }
+
+    .product_left img {
+        width: 100%;
+    }
+
+    .product_right {
+        width: 100%;
+    }
+
+    .navbar-left a,
+    .navbar-right a, .navbar-right button,
+    .find_a_store_img, .find-a-store {
+    display: none;
+}
+
+    .logo_starbucks {
+        padding: 15px;
+    }
+
+    .footer_div p {
+        font-size: 9px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .container, .texto_product_right {
+        width: 100%;
+    }
+}
+
